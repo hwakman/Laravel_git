@@ -20,3 +20,7 @@ Route::any('member',"MemberController@indexAction");
 Route::post('insert',"MemberController@insert");
 
 Route::get('del',"MemberController@delete");
+
+Route::get('update',"MemberController@updateView");
+
+Route::post('updateCommit',"MemberController@update");
