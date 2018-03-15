@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',"authen@loginView");
+
+Route::get('register',"authen@registerView");
+
+Route::post('regisCheck',"authen@regisCheck");
+
+Route::post('home',"authen@loginCheck");
 
 Route::any('member',"MemberController@indexAction");
 

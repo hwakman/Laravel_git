@@ -14,5 +14,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         'http://127.0.0.1:8000/insert',
         'http://127.0.0.1:8000/updateCommit',
+        'http://127.0.0.1:8000/home',
+        'http://127.0.0.1:8000/regisCheck',
     ];
 }
